@@ -3,6 +3,9 @@
 ##  Overview
 This repository contains a comprehensive cybersecurity laboratory setup for educational purposes, designed to demonstrate various network attacks and security vulnerabilities in a controlled environment.
 
+![Topology](cybersecurity/docs/cybersecurity.png)
+
+
 ##  Lab Architecture
 
 ### Network Topology
