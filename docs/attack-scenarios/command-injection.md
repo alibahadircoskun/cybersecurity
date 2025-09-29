@@ -263,17 +263,3 @@ $safe_cmd = escapeshellcmd($command);
 * Monitor process execution logs
 * Track file access patterns
 * Alert on privilege escalation attempts
-
-## Testing for Command Injection
-
-### Manual Testing:
-1. Insert special characters: `; | & $ ( ) < > \` ' "`
-2. Try command separators with known commands
-3. Use time-based detection: `; sleep 10`
-4. Check for error messages revealing system details
-
-### Automated Testing:
-* Burp Suite with active scanner
-* OWASP ZAP
-* SQLMap (can detect command injection too)
-* Custom scripts with injection payloads
