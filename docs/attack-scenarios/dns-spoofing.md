@@ -48,9 +48,9 @@ signs below where it is redir_command_on
 ## What Happens to the Victim
 
 -   The victim attempts to access a legitimate domain (e.g.,
-    `facebook.com`).\
+    `facebook.com`).
 -   Instead of being sent to the correct IP, DNS resolves it to the
-    attacker's IP.\
+    attacker's IP.
 -   The victim unknowingly lands on a malicious server or fake website.
 
 ------------------------------------------------------------------------
@@ -59,15 +59,15 @@ signs below where it is redir_command_on
 
 To protect against DNS spoofing attacks:
 
-1.  **Use DNSSEC** -- Ensures authenticity of DNS responses.\
+1.  **Use DNSSEC** -- Ensures authenticity of DNS responses.
 2.  **Enable ARP Inspection / Dynamic ARP Inspection (DAI)** -- Prevents
-    ARP poisoning on switches.\
+    ARP poisoning on switches.
 3.  **Deploy IDS/IPS Systems** -- Detects and blocks suspicious DNS and
-    ARP traffic.\
+    ARP traffic.
 4.  **Use Encrypted DNS (DoH or DoT)** -- Protects DNS queries from
-    tampering.\
+    tampering.
 5.  **Monitor DNS Logs** -- Detect anomalies in query patterns and
-    unexpected redirects.\
+    unexpected redirects.
 6.  **Keep Systems Patched** -- Regularly update networking and
     DNS-related software.
 
